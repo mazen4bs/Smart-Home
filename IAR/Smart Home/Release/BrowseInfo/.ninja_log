@@ -1,0 +1,11 @@
+# ninja log v5
+0	133	7562444080000000	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Release/BrowseInfo/lamp.xcl	89b2dab6ab349acc
+32	139	7562444080000000	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Release/BrowseInfo/DIO.xcl	30187d489207be25
+48	146	7562444080000000	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Release/BrowseInfo/main.xcl	f9e2aecf940d9367
+36	162	7562444080000000	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Release/BrowseInfo/UART.xcl	5dc9fb4a4c8b5a29
+136	211	7562444083188534	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Release/BrowseInfo/lamp.pbi	fa497b4fbbd8aa32
+143	224	7562444083307932	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Release/BrowseInfo/DIO.pbi	491b825e33b74eb4
+150	228	7562444083357802	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Release/BrowseInfo/main.pbi	2e695739466d2568
+165	239	7562444083467500	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Release/BrowseInfo/UART.pbi	b4c759ee4f910bfd
+241	320	7562444084285316	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Release/BrowseInfo/Smart Home.pbd	5c986a7a3b8c6ea6
+324	1229	7562444093017475	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Release/BrowseInfo/Smart Home.pbw	75450044a401d504

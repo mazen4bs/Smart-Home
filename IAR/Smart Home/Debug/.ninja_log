@@ -1,0 +1,56 @@
+# ninja log v5
+1	169	7562504691095825	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/UART.o	cc7375b019008d49
+0	89	7564258844684487	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/temp.o	83a8f1d22187fd94
+0	364	7564186896418842	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/lamp.o	aad116eb3326d1d5
+1	107	7564304244867050	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+2	51	7564304314061907	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Exe/Smart Home.out	d2046b474c3edf21
+1	112	7564187287430036	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/plug.o	c0864f0c6b4f6a85
+1	173	7561790514192868	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/DIO.o	4543e26326d94efa
+10	227	7562458570554605	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/door.o	20f2b4ada7fd2761
+1	62	7564290365673284	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/startup_ewarm.o	1c9bbfca85c62b23
+0	85	7564303259501034	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/Systick.o	c26d2e0b01a6918b
+2	172	7564304897122187	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+176	222	7564304897637005	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Exe/Smart Home.out	d2046b474c3edf21
+1	96	7564307321733587	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+101	151	7564307322299098	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Exe/Smart Home.out	d2046b474c3edf21
+1	168	7564308053627322	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+2	118	7564308069607629	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Exe/Smart Home.out	d2046b474c3edf21
+1	89	7564308404047990	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+1	48	7564308420344067	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Exe/Smart Home.out	d2046b474c3edf21
+0	93	7564310355605128	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+2	54	7564310374734728	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Exe/Smart Home.out	d2046b474c3edf21
+1	86	7564314245513406	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+1	51	7564314261587978	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Exe/Smart Home.out	d2046b474c3edf21
+1	102	7564314901883637	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+1	50	7564314920843085	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Exe/Smart Home.out	d2046b474c3edf21
+1	100	7564316693469578	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/temp.o	83a8f1d22187fd94
+1	187	7564317095706231	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/temp.o	83a8f1d22187fd94
+0	94	7564317243791470	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/temp.o	83a8f1d22187fd94
+2	86	7564317269992020	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+90	135	7564317270500638	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Exe/Smart Home.out	d2046b474c3edf21
+1	101	7564318213115469	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+1	51	7564318231295701	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Exe/Smart Home.out	d2046b474c3edf21
+2	89	7564318579955910	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+93	140	7564318580484173	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Exe/Smart Home.out	d2046b474c3edf21
+6	191	7564335930417456	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/Systick.o	c26d2e0b01a6918b
+1	90	7564336144161542	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+1	95	7564337462234148	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+0	92	7564338397902896	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/Systick.o	c26d2e0b01a6918b
+0	85	7564338613402595	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/Systick.o	c26d2e0b01a6918b
+0	88	7564338662108411	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+1	51	7564338674803403	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Exe/Smart Home.out	d2046b474c3edf21
+0	159	7564339440956667	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/Systick.o	c26d2e0b01a6918b
+0	94	7564339600444533	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+1	50	7564339606296580	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Exe/Smart Home.out	d2046b474c3edf21
+0	89	7564339957991839	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+0	94	7564340166732853	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/temp.o	83a8f1d22187fd94
+1	50	7564340340990031	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Exe/Smart Home.out	d2046b474c3edf21
+0	93	7564341558617104	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+2	52	7564341572578954	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Exe/Smart Home.out	d2046b474c3edf21
+1	86	7564342018322593	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+1	54	7564342026419260	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Exe/Smart Home.out	d2046b474c3edf21
+1	47	7564342521081215	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Exe/Smart Home.out	4ac4118e1f454ca
+0	181	7564342863758644	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+1	87	7564342872515425	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Exe/Smart Home.out	4ac4118e1f454ca
+1	412	7564823973123594	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/DIO.o	4543e26326d94efa
+0	98	7564825301319239	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/door.o	20f2b4ada7fd2761

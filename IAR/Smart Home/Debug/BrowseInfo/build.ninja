@@ -1,0 +1,110 @@
+##IAR Ninja build file
+
+
+#Rules
+rule COMPILER_XCL
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\XclFileGenerator.exe $xclcommand -f "$rspfile_name"
+  description = IAR_NEW_TOOL+++COMPILER_XCL+++$in+++C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\XclFileGenerator.exe $flags
+  rspfile = $rspfile_name
+  rspfile_content = $flags
+
+rule INDEXER
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\SourceIndexer.exe $flags
+  depfile = $out.dep
+  description = IAR_NEW_TOOL+++INDEXER+++$out+++C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\SourceIndexer.exe $flags
+
+rule MAKEBROWSE
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\makeBrowseData.exe $flags
+  description = IAR_NEW_TOOL+++MAKEBROWSE+++$out+++C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\makeBrowseData.exe $flags
+
+rule PDBLINK
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\PbdLink.exe $flags
+  description = IAR_NEW_TOOL+++PDBLINK+++$out+++C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\PbdLink.exe $flags
+
+
+
+#Build steps
+build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\DIO.xcl : COMPILER_XCL 
+  xclcommand = -source_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\DIO.c" -xcl_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\DIO.xcl" -macro_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\DIO.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\DIO.c" -o "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\DIO.tmp"
+  rspfile_name = E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\DIO.xcl.rsp
+
+build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\door.xcl : COMPILER_XCL 
+  xclcommand = -source_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\door.c" -xcl_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\door.xcl" -macro_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\door.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\door.c" -o "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\door.tmp"
+  rspfile_name = E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\door.xcl.rsp
+
+build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\lamp.xcl : COMPILER_XCL 
+  xclcommand = -source_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\lamp.c" -xcl_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\lamp.xcl" -macro_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\lamp.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\lamp.c" -o "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\lamp.tmp"
+  rspfile_name = E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\lamp.xcl.rsp
+
+build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\main.xcl : COMPILER_XCL 
+  xclcommand = -source_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\main.c" -xcl_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\main.xcl" -macro_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\main.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\main.c" -o "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\main.tmp"
+  rspfile_name = E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\main.xcl.rsp
+
+build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\plug.xcl : COMPILER_XCL 
+  xclcommand = -source_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\plug.c" -xcl_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\plug.xcl" -macro_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\plug.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\plug.c" -o "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\plug.tmp"
+  rspfile_name = E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\plug.xcl.rsp
+
+build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\temp.xcl : COMPILER_XCL 
+  xclcommand = -source_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\temp.c" -xcl_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\temp.xcl" -macro_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\temp.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\temp.c" -o "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\temp.tmp"
+  rspfile_name = E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\temp.xcl.rsp
+
+build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\UART.xcl : COMPILER_XCL 
+  xclcommand = -source_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Limit$ Switch\UART.c" -xcl_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\UART.xcl" -macro_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\UART.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Limit$ Switch\UART.c" -o "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\UART.tmp"
+  rspfile_name = E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\UART.xcl.rsp
+
+build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\DIO.pbi : INDEXER E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\DIO.xcl |  $
+E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\DIO.c
+  flags = "-out=E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\DIO.pbi" -f "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\DIO.xcl"
+
+build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\door.pbi : INDEXER E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\door.xcl |  $
+E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\door.c
+  flags = "-out=E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\door.pbi" -f "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\door.xcl"
+
+build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\lamp.pbi : INDEXER E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\lamp.xcl |  $
+E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\lamp.c
+  flags = "-out=E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\lamp.pbi" -f "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\lamp.xcl"
+
+build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\main.pbi : INDEXER E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\main.xcl |  $
+E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\main.c
+  flags = "-out=E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\main.pbi" -f "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\main.xcl"
+
+build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\plug.pbi : INDEXER E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\plug.xcl |  $
+E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\plug.c
+  flags = "-out=E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\plug.pbi" -f "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\plug.xcl"
+
+build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\temp.pbi : INDEXER E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\temp.xcl |  $
+E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\temp.c
+  flags = "-out=E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\temp.pbi" -f "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\temp.xcl"
+
+build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\UART.pbi : INDEXER E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\UART.xcl |  $
+E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Limit$ Switch\UART.c
+  flags = "-out=E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\UART.pbi" -f "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\UART.xcl"
+
+build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home.pbw : MAKEBROWSE E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home.pbd
+  flags = "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home.pbd" -output "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home.pbw"
+
+build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home_part0.pbi : PDBLINK E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\DIO.pbi |  $
+E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\door.pbi $
+E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\lamp.pbi
+  flags = -M "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home_part0.pbi" "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\DIO.pbi" "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\door.pbi" "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\lamp.pbi"
+
+build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home_part1.pbi : PDBLINK E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\main.pbi |  $
+E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\plug.pbi $
+E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\temp.pbi
+  flags = -M "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home_part1.pbi" "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\main.pbi" "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\plug.pbi" "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\temp.pbi"
+
+build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home_part2.pbi : PDBLINK E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\UART.pbi
+  flags = -M "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home_part2.pbi" "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\UART.pbi"
+
+build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home.pbd : PDBLINK E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home_part0.pbi |  $
+E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home_part1.pbi $
+E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home_part2.pbi
+  flags = -M "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home.pbd" "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home_part0.pbi" "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home_part1.pbi" "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home_part2.pbi"
+
