@@ -24,6 +24,11 @@ rule PDBLINK
 
 
 #Build steps
+build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\buzzer.xcl : COMPILER_XCL 
+  xclcommand = -source_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\buzzer.c" -xcl_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\buzzer.xcl" -macro_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\buzzer.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\buzzer.c" -o "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\buzzer.tmp"
+  rspfile_name = E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\buzzer.xcl.rsp
+
 build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\DIO.xcl : COMPILER_XCL 
   xclcommand = -source_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\DIO.c" -xcl_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\DIO.xcl" -macro_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\DIO.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
   flags = "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\DIO.c" -o "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\DIO.tmp"
@@ -49,6 +54,11 @@ build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\plug
   flags = "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\plug.c" -o "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\plug.tmp"
   rspfile_name = E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\plug.xcl.rsp
 
+build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\startup_ewarm.xcl : COMPILER_XCL 
+  xclcommand = -source_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\startup_ewarm.c" -xcl_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\startup_ewarm.xcl" -macro_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\startup_ewarm.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\startup_ewarm.c" -o "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\startup_ewarm.tmp"
+  rspfile_name = E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\startup_ewarm.xcl.rsp
+
 build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\temp.xcl : COMPILER_XCL 
   xclcommand = -source_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\temp.c" -xcl_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\temp.xcl" -macro_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\temp.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
   flags = "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\temp.c" -o "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\temp.tmp"
@@ -58,6 +68,10 @@ build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\UART
   xclcommand = -source_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Limit$ Switch\UART.c" -xcl_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\UART.xcl" -macro_file "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\UART.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
   flags = "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Limit$ Switch\UART.c" -o "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\UART.tmp"
   rspfile_name = E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\UART.xcl.rsp
+
+build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\buzzer.pbi : INDEXER E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\buzzer.xcl |  $
+E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\buzzer.c
+  flags = "-out=E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\buzzer.pbi" -f "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\buzzer.xcl"
 
 build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\DIO.pbi : INDEXER E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\DIO.xcl |  $
 E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\DIO.c
@@ -79,6 +93,10 @@ build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\plug
 E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\plug.c
   flags = "-out=E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\plug.pbi" -f "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\plug.xcl"
 
+build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\startup_ewarm.pbi : INDEXER E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\startup_ewarm.xcl |  $
+E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\startup_ewarm.c
+  flags = "-out=E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\startup_ewarm.pbi" -f "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\startup_ewarm.xcl"
+
 build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\temp.pbi : INDEXER E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\temp.xcl |  $
 E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\temp.c
   flags = "-out=E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\temp.pbi" -f "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\temp.xcl"
@@ -90,18 +108,20 @@ E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Limit$ Switch\UART.c
 build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home.pbw : MAKEBROWSE E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home.pbd
   flags = "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home.pbd" -output "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home.pbw"
 
-build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home_part0.pbi : PDBLINK E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\DIO.pbi |  $
-E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\door.pbi $
-E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\lamp.pbi
-  flags = -M "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home_part0.pbi" "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\DIO.pbi" "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\door.pbi" "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\lamp.pbi"
+build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home_part0.pbi : PDBLINK E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\buzzer.pbi |  $
+E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\DIO.pbi $
+E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\door.pbi
+  flags = -M "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home_part0.pbi" "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\buzzer.pbi" "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\DIO.pbi" "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\door.pbi"
 
-build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home_part1.pbi : PDBLINK E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\main.pbi |  $
-E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\plug.pbi $
-E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\temp.pbi
-  flags = -M "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home_part1.pbi" "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\main.pbi" "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\plug.pbi" "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\temp.pbi"
+build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home_part1.pbi : PDBLINK E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\lamp.pbi |  $
+E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\main.pbi $
+E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\plug.pbi
+  flags = -M "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home_part1.pbi" "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\lamp.pbi" "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\main.pbi" "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\plug.pbi"
 
-build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home_part2.pbi : PDBLINK E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\UART.pbi
-  flags = -M "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home_part2.pbi" "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\UART.pbi"
+build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home_part2.pbi : PDBLINK E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\startup_ewarm.pbi |  $
+E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\temp.pbi $
+E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\UART.pbi
+  flags = -M "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home_part2.pbi" "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\startup_ewarm.pbi" "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\temp.pbi" "E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\UART.pbi"
 
 build E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home.pbd : PDBLINK E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home_part0.pbi |  $
 E$:\UNI\Senior$ 1\Fall\Embedded\Projects\Smart$ Home\Debug\BrowseInfo\Smart$ Home_part1.pbi $

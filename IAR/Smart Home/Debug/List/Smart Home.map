@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V9.10.1.308/W64 for ARM                  20/Dec/2024  23:44:47
+# IAR ELF Linker V9.10.1.308/W64 for ARM                  21/Dec/2024  23:02:57
 # Copyright 2007-2021 IAR Systems AB.
 #
 #    Output file  =
@@ -12,18 +12,20 @@
 #    Command line =
 #        -f "E:\UNI\Senior 1\Fall\Embedded\Projects\Smart Home\Debug\Exe\Smart
 #        Home.out.rsp" ("E:\UNI\Senior 1\Fall\Embedded\Projects\Smart
+#        Home\Debug\Obj\buzzer.o" "E:\UNI\Senior 1\Fall\Embedded\Projects\Smart
 #        Home\Debug\Obj\DIO.o" "E:\UNI\Senior 1\Fall\Embedded\Projects\Smart
 #        Home\Debug\Obj\door.o" "E:\UNI\Senior 1\Fall\Embedded\Projects\Smart
 #        Home\Debug\Obj\lamp.o" "E:\UNI\Senior 1\Fall\Embedded\Projects\Smart
 #        Home\Debug\Obj\main.o" "E:\UNI\Senior 1\Fall\Embedded\Projects\Smart
 #        Home\Debug\Obj\plug.o" "E:\UNI\Senior 1\Fall\Embedded\Projects\Smart
-#        Home\Debug\Obj\temp.o" "E:\UNI\Senior 1\Fall\Embedded\Projects\Smart
-#        Home\Debug\Obj\UART.o" --no_out_extension -o "E:\UNI\Senior
-#        1\Fall\Embedded\Projects\Smart Home\Debug\Exe\Smart Home.out"
-#        --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb
-#        --map "E:\UNI\Senior 1\Fall\Embedded\Projects\Smart
-#        Home\Debug\List\Smart Home.map" --config "C:\Program Files\IAR
-#        Systems\Embedded Workbench
+#        Home\Debug\Obj\startup_ewarm.o" "E:\UNI\Senior
+#        1\Fall\Embedded\Projects\Smart Home\Debug\Obj\temp.o" "E:\UNI\Senior
+#        1\Fall\Embedded\Projects\Smart Home\Debug\Obj\UART.o"
+#        --no_out_extension -o "E:\UNI\Senior 1\Fall\Embedded\Projects\Smart
+#        Home\Debug\Exe\Smart Home.out" --redirect _Printf=_PrintfFullNoMb
+#        --redirect _Scanf=_ScanfFullNoMb --map "E:\UNI\Senior
+#        1\Fall\Embedded\Projects\Smart Home\Debug\List\Smart Home.map"
+#        --config "C:\Program Files\IAR Systems\Embedded Workbench
 #        9.0\arm\config\linker\TexasInstruments\TM4C123GH6.icf" --semihosting
 #        --entry __iar_program_start --vfe --text_out locale)
 #
@@ -58,64 +60,66 @@ define block CSTACK with size = 4K, alignment = 8 { };
 define block HEAP with size = 8K, alignment = 8 { };
 "P2":  place in [from 0x2000'0000 to 0x2000'7fff] {
           rw, block CSTACK, block HEAP };
+do not initialize { rw section .noinit };
 initialize by copy { rw };
 
   Section            Kind         Address    Size  Object
   -------            ----         -------    ----  ------
-"A0":                                        0x40
-  .intvec            ro code          0x0    0x40  vector_table_M.o [4]
-                                   - 0x40    0x40
+"A0":                                       0x26c
+  .intvec            const            0x0   0x26c  startup_ewarm.o [1]
+                                  - 0x26c   0x26c
 
-"P1":                                      0x246c
-  .text              ro code         0x40   0xf16  xprintffull_nomb.o [2]
-  .text              ro code        0xf56    0x2a  copy_init3.o [4]
-  .text              ro code        0xf80    0x16  strchr.o [4]
-  .text              ro code        0xf96     0xa  xsprout.o [2]
-  .text              ro code        0xfa0    0x40  xfail_s.o [2]
-  .text              ro code        0xfe0    0x36  strlen.o [4]
-  .text              ro code       0x1016     0x2  vectortrap_M.o [4]
-  .text              ro code       0x1018    0x58  memchr.o [4]
-  .text              ro code       0x1070    0x76  ABImemcpy_unaligned.o [4]
-  .text              ro code       0x10e8    0x70  frexp.o [3]
-  .text              ro code       0x1158    0x34  DblCmpLe.o [3]
-  .text              ro code       0x118c    0x34  DblCmpGe.o [3]
-  .text              ro code       0x11c0   0x13a  ldexp.o [3]
-  .text              ro code       0x12fc    0x36  DblToS32.o [3]
-  .text              ro code       0x1334    0x22  S32ToDbl.o [3]
-  .text              ro code       0x1358   0x24e  DblAddSub.o [3]
-  .text              ro code       0x15a8   0x246  DblDiv.o [3]
-  .text              ro code       0x17f0    0x22  DblToU32.o [3]
-  .text              ro code       0x1814    0x1c  U32ToDbl.o [3]
-  .text              ro code       0x1830   0x1aa  DblMul.o [3]
-  .text              ro code       0x19dc   0x230  I64DivMod.o [4]
-  .text              ro code       0x1c0c     0x6  abort.o [2]
-  .text              ro code       0x1c14     0x2  I64DivZer.o [4]
-  .text              ro code       0x1c18    0x14  exit.o [5]
-  .text              ro code       0x1c2c   0x27c  DIO.o [1]
-  .text              ro code       0x1ea8   0x138  temp.o [1]
-  .text              ro code       0x1fe0    0x68  DblToFlt.o [3]
-  .text              ro code       0x2048    0x48  FltToDbl.o [3]
-  .text              ro code       0x2090    0x40  sprintf.o [2]
-  .text              ro code       0x20d0   0x10a  UART.o [1]
-  .text              ro code       0x21dc    0x80  door.o [1]
-  .text              ro code       0x225c    0x78  main.o [1]
-  .text              ro code       0x22d4    0x6c  lamp.o [1]
-  .text              ro code       0x2340    0x6e  plug.o [1]
-  .text              ro code       0x23b0    0x28  data_init.o [4]
-  .text              ro code       0x23d8    0x22  fpinit_M.o [3]
-  .iar.init_table    const         0x23fc    0x14  - Linker created -
-  .text              ro code       0x2410    0x1e  cmain.o [4]
-  .text              ro code       0x242e     0x4  low_level_init.o [2]
-  .text              ro code       0x2432     0x4  exit.o [2]
-  .text              ro code       0x2438     0xa  cexit.o [4]
-  .text              ro code       0x2444    0x1c  cstartup_M.o [4]
-  .rodata            const         0x2460    0x14  main.o [1]
-  .rodata            const         0x2474    0x10  door.o [1]
-  .rodata            const         0x2484    0x10  door.o [1]
-  .rodata            const         0x2494    0x10  temp.o [1]
-  Initializer bytes  const         0x24a4     0x8  <for P2-1>
-  .rodata            const         0x24ac     0x0  copy_init3.o [4]
-                                 - 0x24ac  0x246c
+"P1":                                      0x254c
+  .text              ro code        0x26c   0xf16  xprintffull_nomb.o [2]
+  .text              ro code       0x1182    0x2a  copy_init3.o [4]
+  .text              ro code       0x11ac    0x16  strchr.o [4]
+  .text              ro code       0x11c2     0xa  xsprout.o [2]
+  .text              ro code       0x11cc    0x40  xfail_s.o [2]
+  .text              ro code       0x120c    0x36  strlen.o [4]
+  .text              ro code       0x1244    0x58  memchr.o [4]
+  .text              ro code       0x129c    0x76  ABImemcpy_unaligned.o [4]
+  .text              ro code       0x1314    0x70  frexp.o [3]
+  .text              ro code       0x1384    0x34  DblCmpLe.o [3]
+  .text              ro code       0x13b8    0x34  DblCmpGe.o [3]
+  .text              ro code       0x13ec   0x13a  ldexp.o [3]
+  .text              ro code       0x1528    0x36  DblToS32.o [3]
+  .text              ro code       0x1560    0x22  S32ToDbl.o [3]
+  .text              ro code       0x1584   0x24e  DblAddSub.o [3]
+  .text              ro code       0x17d4   0x246  DblDiv.o [3]
+  .text              ro code       0x1a1c    0x22  DblToU32.o [3]
+  .text              ro code       0x1a40    0x1c  U32ToDbl.o [3]
+  .text              ro code       0x1a5c   0x1aa  DblMul.o [3]
+  .text              ro code       0x1c08   0x230  I64DivMod.o [4]
+  .text              ro code       0x1e38     0x6  abort.o [2]
+  .text              ro code       0x1e40     0x2  I64DivZer.o [4]
+  .text              ro code       0x1e44    0x14  exit.o [5]
+  .text              ro code       0x1e58   0x27c  DIO.o [1]
+  .text              ro code       0x20d4   0x138  temp.o [1]
+  .text              ro code       0x220c    0x68  DblToFlt.o [3]
+  .text              ro code       0x2274    0x48  FltToDbl.o [3]
+  .text              ro code       0x22bc    0x40  sprintf.o [2]
+  .text              ro code       0x22fc   0x10a  UART.o [1]
+  .text              ro code       0x2408    0xf8  main.o [1]
+  .text              ro code       0x2500    0x40  buzzer.o [1]
+  .text              ro code       0x2540    0x6c  lamp.o [1]
+  .text              ro code       0x25ac    0x6e  plug.o [1]
+  .text              ro code       0x261c    0x80  door.o [1]
+  .text              ro code       0x269c    0x28  data_init.o [4]
+  .text              ro code       0x26c4    0x22  fpinit_M.o [3]
+  .iar.init_table    const         0x26e8    0x14  - Linker created -
+  .text              ro code       0x26fc    0x1e  startup_ewarm.o [1]
+  .text              ro code       0x271c    0x1c  cstartup_M.o [4]
+  .text              ro code       0x2738    0x1e  cmain.o [4]
+  .text              ro code       0x2756     0x4  low_level_init.o [2]
+  .text              ro code       0x275a     0x4  exit.o [2]
+  .text              ro code       0x2760     0xa  cexit.o [4]
+  .rodata            const         0x276c    0x14  main.o [1]
+  .rodata            const         0x2780    0x10  door.o [1]
+  .rodata            const         0x2790    0x10  door.o [1]
+  .rodata            const         0x27a0    0x10  temp.o [1]
+  Initializer bytes  const         0x27b0     0x8  <for P2-1>
+  .rodata            const         0x27b8     0x0  copy_init3.o [4]
+                                 - 0x27b8  0x254c
 
 "P2", part 1 of 2:                            0x8
   P2-1                        0x2000'0000     0x5  <Init block>
@@ -123,17 +127,16 @@ initialize by copy { rw };
     .data            inited   0x2000'0004     0x1  door.o [1]
                             - 0x2000'0005     0x5
 
-"P2", part 2 of 2:                         0x1000
-  CSTACK                      0x2000'0008  0x1000  <Block>
-    CSTACK           uninit   0x2000'0008  0x1000  <Block tail>
-                            - 0x2000'1008  0x1000
+"P2", part 2 of 2:                          0x200
+  .noinit            uninit   0x2000'0008   0x200  startup_ewarm.o [1]
+                            - 0x2000'0208   0x200
 
 Unused ranges:
 
          From           To      Size
          ----           --      ----
-       0x24ac     0x3'ffff  0x3'db54
-  0x2000'1008  0x2000'7fff    0x6ff8
+       0x27b8     0x3'ffff  0x3'd848
+  0x2000'0208  0x2000'7fff    0x7df8
 
 
 *******************************************************************************
@@ -144,7 +147,7 @@ Unused ranges:
           -------      ----
 Copy (__iar_copy_init3)
     1 source range, total size 0x8 (160% of destination):
-               0x24a4   0x8
+               0x27b0   0x8
     1 destination range, total size 0x5:
           0x2000'0000   0x5
 
@@ -163,13 +166,15 @@ command line/config:
 E:\UNI\Senior 1\Fall\Embedded\Projects\Smart Home\Debug\Obj: [1]
     DIO.o                      636
     UART.o                     266
+    buzzer.o                    64
     door.o                     128       33        1
     lamp.o                     108
-    main.o                     120       20
+    main.o                     248       20
     plug.o                     110
+    startup_ewarm.o             30      620      512
     temp.o                     312       16
     ------------------------------------------------
-    Total:                   1'680       69        1
+    Total:                   1'902      689      513
 
 dl7M_tln.a: [2]
     abort.o                      6
@@ -212,20 +217,18 @@ rt7M_tl.a: [4]
     memchr.o                    88
     strchr.o                    22
     strlen.o                    54
-    vector_table_M.o            64
-    vectortrap_M.o               2
     ------------------------------------------------
-    Total:                   1'060
+    Total:                     994
 
 shb_l.a: [5]
     exit.o                      20
     ------------------------------------------------
     Total:                      20
 
-    Gaps                        28        2
-    Linker created                       23    4'096
+    Gaps                        30        4
+    Linker created                       23
 ----------------------------------------------------
-    Grand Total:             9'290       98    4'101
+    Grand Total:             9'448      720      517
 
 
 *******************************************************************************
@@ -234,104 +237,102 @@ shb_l.a: [5]
 
 Entry                       Address   Size  Type      Object
 -----                       -------   ----  ----      ------
-.iar.init_table$$Base        0x23fc          --   Gb  - Linker created -
-.iar.init_table$$Limit       0x2410          --   Gb  - Linker created -
-?main                        0x2411         Code  Gb  cmain.o [4]
-ADC_Init                     0x1ea9   0x7e  Code  Gb  temp.o [1]
-ADC_Read                     0x1f27   0x1a  Code  Gb  temp.o [1]
-BusFault_Handler             0x1017         Code  Wk  vectortrap_M.o [4]
-CSTACK$$Base            0x2000'0008          --   Gb  - Linker created -
-CSTACK$$Limit           0x2000'1008          --   Gb  - Linker created -
-DebugMon_Handler             0x1017         Code  Wk  vectortrap_M.o [4]
-Get_Temperature              0x1f41   0x2e  Code  Gb  temp.o [1]
-HardFault_Handler            0x1017         Code  Wk  vectortrap_M.o [4]
-MemManage_Handler            0x1017         Code  Wk  vectortrap_M.o [4]
-NMI_Handler                  0x1017         Code  Wk  vectortrap_M.o [4]
-PendSV_Handler               0x1017         Code  Wk  vectortrap_M.o [4]
-Region$$Table$$Base          0x23fc          --   Gb  - Linker created -
-Region$$Table$$Limit         0x2410          --   Gb  - Linker created -
-SVC_Handler                  0x1017         Code  Wk  vectortrap_M.o [4]
-SysTick_Handler              0x1017         Code  Wk  vectortrap_M.o [4]
-UART0_Init                   0x20d1   0x98  Code  Gb  UART.o [1]
-UART0_ReceiveChar            0x2179   0x10  Code  Gb  UART.o [1]
-UART0_TransmitChar           0x2169   0x10  Code  Gb  UART.o [1]
-UART0_TransmitString         0x21c5   0x16  Code  Gb  UART.o [1]
-UsageFault_Handler           0x1017         Code  Wk  vectortrap_M.o [4]
-_LitobFullNoMb                0xd5d  0x10c  Code  Lc  xprintffull_nomb.o [2]
-_PrintfFullNoMb                0x41  0xcec  Code  Gb  xprintffull_nomb.o [2]
-_PutcharFullNoMb              0xec1   0x20  Code  Lc  xprintffull_nomb.o [2]
-_PutcharsFullNoMb             0xee1   0x2e  Code  Lc  xprintffull_nomb.o [2]
-_SProut                       0xf97    0xa  Code  Gb  xsprout.o [2]
-__aeabi_cdcmple              0x1159         Code  Gb  DblCmpLe.o [3]
-__aeabi_cdrcmple             0x118d         Code  Gb  DblCmpGe.o [3]
-__aeabi_d2f                  0x1fe1         Code  Gb  DblToFlt.o [3]
-__aeabi_d2iz                 0x12fd         Code  Gb  DblToS32.o [3]
-__aeabi_d2uiz                0x17f1         Code  Gb  DblToU32.o [3]
-__aeabi_ddiv                 0x15a9         Code  Gb  DblDiv.o [3]
-__aeabi_dmul                 0x1831         Code  Gb  DblMul.o [3]
-__aeabi_dsub                 0x14c5         Code  Gb  DblAddSub.o [3]
-__aeabi_f2d                  0x2049         Code  Gb  FltToDbl.o [3]
-__aeabi_i2d                  0x1335         Code  Gb  S32ToDbl.o [3]
-__aeabi_ldiv0                0x1c15         Code  Gb  I64DivZer.o [4]
-__aeabi_ui2d                 0x1815         Code  Gb  U32ToDbl.o [3]
-__aeabi_uldivmod             0x19dd         Code  Gb  I64DivMod.o [4]
-__cmain                      0x2411         Code  Gb  cmain.o [4]
-__exit                       0x1c19   0x14  Code  Gb  exit.o [5]
-__iar_Fail_s                  0xfa1   0x1c  Code  Gb  xfail_s.o [2]
-__iar_Memchr                 0x1019         Code  Gb  memchr.o [4]
-__iar_Strchr                  0xf81         Code  Gb  strchr.o [4]
-__iar_copy_init3              0xf57   0x2a  Code  Gb  copy_init3.o [4]
-__iar_data_init3             0x23b1   0x28  Code  Gb  data_init.o [4]
-__iar_frexp                  0x10f5         Code  Gb  frexp.o [3]
-__iar_frexpl                 0x10f5         Code  Gb  frexp.o [3]
-__iar_init_vfp               0x23d9         Code  Gb  fpinit_M.o [3]
-__iar_ldexp64                0x11c1         Code  Gb  ldexp.o [3]
-__iar_program_start          0x2445         Code  Gb  cstartup_M.o [4]
-__iar_scalbln64              0x11c1         Code  Gb  ldexp.o [3]
-__iar_scalbn64               0x11c1         Code  Gb  ldexp.o [3]
+.iar.init_table$$Base        0x26e8          --   Gb  - Linker created -
+.iar.init_table$$Limit       0x26fc          --   Gb  - Linker created -
+?main                        0x2739         Code  Gb  cmain.o [4]
+ADC_Init                     0x20d5   0x7e  Code  Gb  temp.o [1]
+ADC_Read                     0x2153   0x1a  Code  Gb  temp.o [1]
+FaultISR                     0x2717    0x2  Code  Lc  startup_ewarm.o [1]
+Get_Temperature              0x216d   0x2e  Code  Gb  temp.o [1]
+IntDefaultHandler            0x2719    0x2  Code  Lc  startup_ewarm.o [1]
+NmiSR                        0x2715    0x2  Code  Lc  startup_ewarm.o [1]
+Region$$Table$$Base          0x26e8          --   Gb  - Linker created -
+Region$$Table$$Limit         0x26fc          --   Gb  - Linker created -
+ResetISR                     0x26fd   0x14  Code  Gb  startup_ewarm.o [1]
+Timer0A_Handler              0x2459   0x12  Code  Gb  main.o [1]
+Timer0A_Init                 0x2409   0x50  Code  Gb  main.o [1]
+UART0_Init                   0x22fd   0x98  Code  Gb  UART.o [1]
+UART0_ReceiveChar            0x23a5   0x10  Code  Gb  UART.o [1]
+UART0_TransmitChar           0x2395   0x10  Code  Gb  UART.o [1]
+UART0_TransmitString         0x23f1   0x16  Code  Gb  UART.o [1]
+_LitobFullNoMb                0xf89  0x10c  Code  Lc  xprintffull_nomb.o [2]
+_PrintfFullNoMb               0x26d  0xcec  Code  Gb  xprintffull_nomb.o [2]
+_PutcharFullNoMb             0x10ed   0x20  Code  Lc  xprintffull_nomb.o [2]
+_PutcharsFullNoMb            0x110d   0x2e  Code  Lc  xprintffull_nomb.o [2]
+_SProut                      0x11c3    0xa  Code  Gb  xsprout.o [2]
+__aeabi_cdcmple              0x1385         Code  Gb  DblCmpLe.o [3]
+__aeabi_cdrcmple             0x13b9         Code  Gb  DblCmpGe.o [3]
+__aeabi_d2f                  0x220d         Code  Gb  DblToFlt.o [3]
+__aeabi_d2iz                 0x1529         Code  Gb  DblToS32.o [3]
+__aeabi_d2uiz                0x1a1d         Code  Gb  DblToU32.o [3]
+__aeabi_ddiv                 0x17d5         Code  Gb  DblDiv.o [3]
+__aeabi_dmul                 0x1a5d         Code  Gb  DblMul.o [3]
+__aeabi_dsub                 0x16f1         Code  Gb  DblAddSub.o [3]
+__aeabi_f2d                  0x2275         Code  Gb  FltToDbl.o [3]
+__aeabi_i2d                  0x1561         Code  Gb  S32ToDbl.o [3]
+__aeabi_ldiv0                0x1e41         Code  Gb  I64DivZer.o [4]
+__aeabi_ui2d                 0x1a41         Code  Gb  U32ToDbl.o [3]
+__aeabi_uldivmod             0x1c09         Code  Gb  I64DivMod.o [4]
+__cmain                      0x2739         Code  Gb  cmain.o [4]
+__exit                       0x1e45   0x14  Code  Gb  exit.o [5]
+__iar_Fail_s                 0x11cd   0x1c  Code  Gb  xfail_s.o [2]
+__iar_Memchr                 0x1245         Code  Gb  memchr.o [4]
+__iar_Strchr                 0x11ad         Code  Gb  strchr.o [4]
+__iar_copy_init3             0x1183   0x2a  Code  Gb  copy_init3.o [4]
+__iar_data_init3             0x269d   0x28  Code  Gb  data_init.o [4]
+__iar_frexp                  0x1321         Code  Gb  frexp.o [3]
+__iar_frexpl                 0x1321         Code  Gb  frexp.o [3]
+__iar_init_vfp               0x26c5         Code  Gb  fpinit_M.o [3]
+__iar_ldexp64                0x13ed         Code  Gb  ldexp.o [3]
+__iar_program_start          0x271d         Code  Gb  cstartup_M.o [4]
+__iar_scalbln64              0x13ed         Code  Gb  ldexp.o [3]
+__iar_scalbn64               0x13ed         Code  Gb  ldexp.o [3]
 __iar_softfp___iar_frexp64
-                             0x10e9         Code  Gb  frexp.o [3]
-__iar_softfp_frexp           0x10e9         Code  Gb  frexp.o [3]
-__iar_softfp_frexpl          0x10e9         Code  Gb  frexp.o [3]
-__iar_unaligned_memcpy       0x1071         Code  Gb  ABImemcpy_unaligned.o [4]
+                             0x1315         Code  Gb  frexp.o [3]
+__iar_softfp_frexp           0x1315         Code  Gb  frexp.o [3]
+__iar_softfp_frexpl          0x1315         Code  Gb  frexp.o [3]
+__iar_unaligned_memcpy       0x129d         Code  Gb  ABImemcpy_unaligned.o [4]
 __iar_unaligned_memcpy4
-                             0x1091         Code  Gb  ABImemcpy_unaligned.o [4]
+                             0x12bd         Code  Gb  ABImemcpy_unaligned.o [4]
 __iar_unaligned_memcpy8
-                             0x1091         Code  Gb  ABImemcpy_unaligned.o [4]
-__low_level_init             0x242f    0x4  Code  Gb  low_level_init.o [2]
-__vector_table                  0x0         Data  Gb  vector_table_M.o [4]
-_call_main                   0x241d         Code  Gb  cmain.o [4]
-_exit                        0x2439         Code  Gb  cexit.o [4]
-abort                        0x1c0d    0x6  Code  Gb  abort.o [2]
-ctz                          0x1c2d   0x18  Code  Gb  DIO.o [1]
-dio_init                     0x1c45  0x14a  Code  Gb  DIO.o [1]
-dio_readpin                  0x1d8f   0x52  Code  Gb  DIO.o [1]
-dio_writepin                 0x1de1   0xa6  Code  Gb  DIO.o [1]
-door_init                    0x21dd   0x2c  Code  Gb  door.o [1]
-door_update                  0x2209   0x48  Code  Gb  door.o [1]
+                             0x12bd         Code  Gb  ABImemcpy_unaligned.o [4]
+__low_level_init             0x2757    0x4  Code  Gb  low_level_init.o [2]
+__vector_table                  0x0  0x26c  Data  Gb  startup_ewarm.o [1]
+_call_main                   0x2745         Code  Gb  cmain.o [4]
+_exit                        0x2761         Code  Gb  cexit.o [4]
+abort                        0x1e39    0x6  Code  Gb  abort.o [2]
+buzzer_init                  0x2501    0xe  Code  Gb  buzzer.o [1]
+buzzer_update                0x2511   0x2c  Code  Gb  buzzer.o [1]
+ctz                          0x1e59   0x18  Code  Gb  DIO.o [1]
+dio_init                     0x1e71  0x14a  Code  Gb  DIO.o [1]
+dio_readpin                  0x1fbb   0x52  Code  Gb  DIO.o [1]
+dio_writepin                 0x200d   0xa6  Code  Gb  DIO.o [1]
+door_init                    0x261d   0x2c  Code  Gb  door.o [1]
+door_update                  0x2649   0x48  Code  Gb  door.o [1]
 door_update::prev_state
                         0x2000'0004    0x1  Data  Lc  door.o [1]
-exit                         0x2433    0x4  Code  Gb  exit.o [2]
-lamp_control                 0x22f7   0x26  Code  Gb  lamp.o [1]
-lamp_init                    0x22d5   0x22  Code  Gb  lamp.o [1]
-lamp_update                  0x231d   0x24  Code  Gb  lamp.o [1]
-ldexp                        0x11c1         Code  Gb  ldexp.o [3]
-ldexpl                       0x11c1         Code  Gb  ldexp.o [3]
-main                         0x225d   0x78  Code  Gb  main.o [1]
-memchr                       0x1019         Code  Gb  memchr.o [4]
-plug_control                 0x2363   0x28  Code  Gb  plug.o [1]
-plug_init                    0x2341   0x22  Code  Gb  plug.o [1]
-plug_update                  0x238b   0x24  Code  Gb  plug.o [1]
-scalbln                      0x11c1         Code  Gb  ldexp.o [3]
-scalblnl                     0x11c1         Code  Gb  ldexp.o [3]
-scalbn                       0x11c1         Code  Gb  ldexp.o [3]
-scalbnl                      0x11c1         Code  Gb  ldexp.o [3]
-scale                         0xe69   0x46  Code  Lc  xprintffull_nomb.o [2]
+exit                         0x275b    0x4  Code  Gb  exit.o [2]
+lamp_control                 0x2563   0x26  Code  Gb  lamp.o [1]
+lamp_init                    0x2541   0x22  Code  Gb  lamp.o [1]
+lamp_update                  0x2589   0x24  Code  Gb  lamp.o [1]
+ldexp                        0x13ed         Code  Gb  ldexp.o [3]
+ldexpl                       0x13ed         Code  Gb  ldexp.o [3]
+main                         0x246b   0x68  Code  Gb  main.o [1]
+memchr                       0x1245         Code  Gb  memchr.o [4]
+plug_control                 0x25cf   0x28  Code  Gb  plug.o [1]
+plug_init                    0x25ad   0x22  Code  Gb  plug.o [1]
+plug_update                  0x25f7   0x24  Code  Gb  plug.o [1]
+pui32Stack              0x2000'0008  0x200  Data  Lc  startup_ewarm.o [1]
+scalbln                      0x13ed         Code  Gb  ldexp.o [3]
+scalblnl                     0x13ed         Code  Gb  ldexp.o [3]
+scalbn                       0x13ed         Code  Gb  ldexp.o [3]
+scalbnl                      0x13ed         Code  Gb  ldexp.o [3]
+scale                        0x1095   0x46  Code  Lc  xprintffull_nomb.o [2]
 sec_hand                0x2000'0000    0x4  Data  Lc  xfail_s.o [2]
-sprintf                      0x2091   0x40  Code  Gb  sprintf.o [2]
-strchr                        0xf81         Code  Gb  strchr.o [4]
-strlen                        0xfe1         Code  Gb  strlen.o [4]
-temp_update                  0x1f6f   0x26  Code  Gb  temp.o [1]
+sprintf                      0x22bd   0x40  Code  Gb  sprintf.o [2]
+strchr                       0x11ad         Code  Gb  strchr.o [4]
+strlen                       0x120d         Code  Gb  strlen.o [4]
+temp_update                  0x219b   0x26  Code  Gb  temp.o [1]
 
 
 [1] = E:\UNI\Senior 1\Fall\Embedded\Projects\Smart Home\Debug\Obj
@@ -340,9 +341,9 @@ temp_update                  0x1f6f   0x26  Code  Gb  temp.o [1]
 [4] = rt7M_tl.a
 [5] = shb_l.a
 
-  9'290 bytes of readonly  code memory
-     98 bytes of readonly  data memory
-  4'101 bytes of readwrite data memory
+  9'448 bytes of readonly  code memory
+    720 bytes of readonly  data memory
+    517 bytes of readwrite data memory
 
 Errors: none
 Warnings: none

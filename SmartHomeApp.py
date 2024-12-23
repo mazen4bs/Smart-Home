@@ -140,10 +140,17 @@ class SmartHomeApp(QMainWindow):
         elif data.startswith("Temp :"):
             temperature = float(data.split(":")[1])
             self.update_temperature(temperature)
+        # elif data.startwith("Plug :"):
+        #     plug_status = float(data.split(":")[1])
+        #     self.update_plug_status(plug_status)
+        # elif data.startwith ("Lamp :"):
+        #     lamp_status = data.split(":")[1]
+        #     self.update_lamp_status(lamp_status)
+            
 
     def update_door_status(self, status):
         """Update the door status and log the event."""
-        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        timestamp = datetime.now().strftime("%d-%m-%Y  %H:%M:%S")
         self.entry_counter += 1
         self.door_status_label.setText(f"Door Status: {status}")
         self.counter_label.setText(f"Log Entries: {self.entry_counter}")

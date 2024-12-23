@@ -2089,6 +2089,12 @@
         <name>$PROJ_DIR$\bitwise_operations.h</name>
     </file>
     <file>
+        <name>$PROJ_DIR$\buzzer.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\buzzer.h</name>
+    </file>
+    <file>
         <name>$PROJ_DIR$\DIO.c</name>
     </file>
     <file>
@@ -2114,6 +2120,9 @@
     </file>
     <file>
         <name>$PROJ_DIR$\plug.h</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\startup_ewarm.c</name>
     </file>
     <file>
         <name>$PROJ_DIR$\temp.c</name>

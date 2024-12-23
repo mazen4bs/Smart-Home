@@ -1,124 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
     <fileVersion>5</fileVersion>
-    <fileChecksum>3475263852</fileChecksum>
+    <fileChecksum>455505658</fileChecksum>
     <configuration>
         <name>Debug</name>
         <outputs>
-            <file>$PROJ_DIR$\Systick.c</file>
-            <file>$PROJ_DIR$\DIO.c</file>
-            <file>$PROJ_DIR$\DIO.h</file>
-            <file>$PROJ_DIR$\door.c</file>
-            <file>$PROJ_DIR$\door.h</file>
-            <file>$PROJ_DIR$\bitwise_operations.h</file>
-            <file>$PROJ_DIR$\inc\hw_nvic.h</file>
-            <file>$PROJ_DIR$\Systick.h</file>
-            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
-            <file>$PROJ_DIR$\main.c</file>
-            <file>$PROJ_DIR$\Debug\Exe\Smart Home.out</file>
-            <file>$PROJ_DIR$\inc\hw_types.h</file>
-            <file>$PROJ_DIR$\plug.c</file>
-            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
-            <file>$PROJ_DIR$\Debug\List\Smart Home.map</file>
-            <file>$PROJ_DIR$\Debug\Obj\plug.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\lamp.o</file>
-            <file>$PROJ_DIR$\temp.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\door.o</file>
-            <file>$PROJ_DIR$\tm4c123gh6pm.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
-            <file>$PROJ_DIR$\..\Limit Switch\UART.c</file>
-            <file>$PROJ_DIR$\..\Limit Switch\tm4c123gh6pm.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\startup_ewarm.o</file>
             <file>$TOOLKIT_DIR$\config\linker\TexasInstruments\TM4C123GH6.icf</file>
-            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\door.o</file>
             <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
-            <file>$PROJ_DIR$\Debug\Obj\Systick.o</file>
-            <file>$PROJ_DIR$\lamp.h</file>
-            <file>$PROJ_DIR$\startup_ewarm.c</file>
-            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
-            <file>$PROJ_DIR$\plug.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
             <file>$PROJ_DIR$\Debug\Obj\UART.o</file>
-            <file>$PROJ_DIR$\lamp.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\Systick.o</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+            <file>$PROJ_DIR$\UART.h</file>
             <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
             <file>$PROJ_DIR$\Debug\Obj\temp.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
             <file>$PROJ_DIR$\Debug\Obj\DIO.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\tm4c123gh6pm.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup_ewarm.o</file>
             <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-            <file>$PROJ_DIR$\..\Limit Switch\UART.h</file>
-            <file>$PROJ_DIR$\UART.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\buzzer.o</file>
+            <file>$PROJ_DIR$\lamp.c</file>
             <file>$PROJ_DIR$\temp.c</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$PROJ_DIR$\..\Limit Switch\tm4c123gh6pm.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\Smart Home.out</file>
+            <file>$PROJ_DIR$\Debug\Obj\lamp.o</file>
+            <file>$PROJ_DIR$\door.c</file>
+            <file>$PROJ_DIR$\..\Limit Switch\UART.c</file>
+            <file>$PROJ_DIR$\DIO.c</file>
+            <file>$PROJ_DIR$\..\Limit Switch\UART.h</file>
+            <file>$PROJ_DIR$\temp.h</file>
+            <file>$PROJ_DIR$\Systick.c</file>
+            <file>$PROJ_DIR$\inc\hw_types.h</file>
+            <file>$PROJ_DIR$\plug.h</file>
+            <file>$PROJ_DIR$\bitwise_operations.h</file>
+            <file>$PROJ_DIR$\Debug\List\Smart Home.map</file>
+            <file>$PROJ_DIR$\buzzer.h</file>
+            <file>$PROJ_DIR$\door.h</file>
+            <file>$PROJ_DIR$\lamp.h</file>
+            <file>$PROJ_DIR$\buzzer.c</file>
+            <file>$PROJ_DIR$\DIO.h</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\plug.o</file>
+            <file>$PROJ_DIR$\Systick.h</file>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$PROJ_DIR$\plug.c</file>
+            <file>$PROJ_DIR$\startup_ewarm.c</file>
+            <file>$PROJ_DIR$\inc\hw_nvic.h</file>
         </outputs>
-        <file>
-            <name>$PROJ_DIR$\Systick.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 28</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 26 33 43 41 36 38 25 7 19</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\DIO.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 39</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 26 33 43 36 38 25 2 5 19</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\door.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 18</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 26 33 43 41 36 38 25 2 45 4 19</file>
-                </tool>
-            </inputs>
-        </file>
         <file>
             <name>[ROOT_NODE]</name>
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 14 10</file>
+                    <file> 37 26</file>
                 </tool>
             </outputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\main.c</name>
+            <name>$PROJ_DIR$\lamp.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 40</file>
+                    <file> 27</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 26 33 43 41 36 42 38 20 25 2 45 4 29 32 17 19</file>
+                    <file> 6 5 9 13 1 18 42 40 17</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\temp.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 14</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 6 5 9 20 13 11 1 16 18 12 32 17</file>
                 </tool>
             </inputs>
         </file>
@@ -127,18 +100,48 @@
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 14</file>
+                    <file> 37</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 24 8 31 27 13 39 34 18 16 40 15 37</file>
+                    <file> 0 43 8 3 24 15 4 21 2 27 10 44 19 14</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\plug.c</name>
+            <name>$PROJ_DIR$\door.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 2</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 6 5 9 20 13 1 18 42 12 39 17</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Limit Switch\UART.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 4</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 6 5 9 20 13 1 18 31 25</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\DIO.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
@@ -148,22 +151,67 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 26 33 43 36 38 25 2 32 19</file>
+                    <file> 6 5 9 13 1 18 42 36 17</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Limit Switch\UART.c</name>
+            <name>$PROJ_DIR$\Systick.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 34</file>
+                    <file> 7</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 26 33 43 41 36 38 25 44 22</file>
+                    <file> 6 5 9 20 13 1 18 45 17</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\buzzer.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 21</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 6 5 9 13 1 18 42 38 32 17</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 10</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 6 5 9 20 13 11 1 16 18 42 12 38 39 40 35 32 17</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\plug.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 44</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 6 5 9 13 1 18 42 35 17</file>
                 </tool>
             </inputs>
         </file>
@@ -172,43 +220,13 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 23</file>
+                    <file> 19</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 26 33 43 36 38 25 6 11</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\lamp.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 16</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 26 33 43 36 38 25 2 29 19</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\temp.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 37</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 26 33 43 41 36 42 38 20 25 45 17 19</file>
+                    <file> 6 5 9 13 1 18 49 34</file>
                 </tool>
             </inputs>
         </file>
@@ -223,15 +241,33 @@
     <configuration>
         <name>Release</name>
         <outputs>
-            <file>$PROJ_DIR$\Release\Obj\UART.o</file>
+            <file>$PROJ_DIR$\Release\Obj\main.o</file>
             <file>$PROJ_DIR$\Release\Obj\lamp.o</file>
             <file>$PROJ_DIR$\Release\Obj\DIO.o</file>
-            <file>$PROJ_DIR$\Release\Obj\main.o</file>
+            <file>$PROJ_DIR$\Release\Obj\UART.o</file>
+            <file>$PROJ_DIR$\lamp.c</file>
+            <file>$PROJ_DIR$\..\Limit Switch\UART.c</file>
             <file>$PROJ_DIR$\DIO.c</file>
             <file>$PROJ_DIR$\main.c</file>
-            <file>$PROJ_DIR$\..\Limit Switch\UART.c</file>
-            <file>$PROJ_DIR$\lamp.c</file>
         </outputs>
+        <file>
+            <name>$PROJ_DIR$\lamp.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 1</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Limit Switch\UART.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 3</file>
+                </tool>
+            </outputs>
+        </file>
         <file>
             <name>$PROJ_DIR$\DIO.c</name>
             <outputs>
@@ -246,25 +282,7 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 3</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Limit Switch\UART.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
                     <file> 0</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\lamp.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 1</file>
                 </tool>
             </outputs>
         </file>

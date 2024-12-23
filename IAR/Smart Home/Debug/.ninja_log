@@ -54,3 +54,40 @@
 1	87	7564342872515425	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Exe/Smart Home.out	4ac4118e1f454ca
 1	412	7564823973123594	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/DIO.o	4543e26326d94efa
 0	98	7564825301319239	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/door.o	20f2b4ada7fd2761
+0	290	7565086185123232	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+5	105	7565086211290725	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/door.o	20f2b4ada7fd2761
+9	121	7565086211439919	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/temp.o	83a8f1d22187fd94
+125	341	7565086213669082	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Exe/Smart Home.out	4ac4118e1f454ca
+0	90	7565086947437875	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+2	60	7565086955633545	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Exe/Smart Home.out	4ac4118e1f454ca
+0	91	7565087932092025	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+1	47	7565087944229717	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Exe/Smart Home.out	4ac4118e1f454ca
+1	175	7565089466912212	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+178	223	7565089467410834	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Exe/Smart Home.out	4ac4118e1f454ca
+0	83	7565090494264365	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+1	160	7565090513911375	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Exe/Smart Home.out	4ac4118e1f454ca
+1	89	7565091149167206	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+1	47	7565091159357093	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Exe/Smart Home.out	4ac4118e1f454ca
+7	305	7565106588009416	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/startup_ewarm.o	1c9bbfca85c62b23
+1	105	7565107883642119	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+1	163	7565115418949413	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+0	163	7565119498179731	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+1	58	7565119510037604	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Exe/Smart Home.out	df9e967185b28020
+1	302	7565141750085398	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/startup_ewarm.o	1c9bbfca85c62b23
+0	178	7565166196256672	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/temp.o	83a8f1d22187fd94
+1	101	7565167235377176	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+1	88	7565167459952998	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+1	86	7565167559518421	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/buzzer.o	1a76e2db34c82668
+1	59	7565168551427366	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/startup_ewarm.o	1c9bbfca85c62b23
+1	88	7565168605431178	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+1	49	7565168612424807	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Exe/Smart Home.out	483d4cbf29854d3c
+1	188	7565170227810256	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/buzzer.o	1a76e2db34c82668
+6	218	7565170228089207	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+223	273	7565170228673137	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Exe/Smart Home.out	483d4cbf29854d3c
+0	167	7565179349870294	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+1	92	7565180506196101	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+1	93	7565180628481686	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+1	51	7565180655882030	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/startup_ewarm.o	1c9bbfca85c62b23
+55	101	7565180656380327	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Exe/Smart Home.out	483d4cbf29854d3c
+1	91	7565181769179690	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Obj/main.o	d943c2a664493be5
+1	52	7565181775337064	E:/UNI/Senior 1/Fall/Embedded/Projects/Smart Home/Debug/Exe/Smart Home.out	483d4cbf29854d3c

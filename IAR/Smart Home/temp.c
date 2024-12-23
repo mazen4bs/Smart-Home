@@ -3,7 +3,6 @@
 #include "UART.h"
 #include "temp.h"
 
-// ADC Initialization
 void ADC_Init(void) {
     // Enable ADC0 and Port E
     SYSCTL_RCGCADC_R |= (1 << 0);  // Enable clock for ADC0
@@ -48,5 +47,4 @@ void temp_update(void){
      char buffer[50];
      sprintf(buffer, "Temp : %.2f\r\n", temperature);
      UART0_TransmitString(buffer);
-
 }
